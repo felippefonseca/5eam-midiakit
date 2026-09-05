@@ -252,6 +252,21 @@ section[id]{scroll-margin-top:88px}
 }
 .logo-tile{height:96px;border-radius:12px;background:var(--branco-gelo);display:grid;place-items:center;padding:16px 22px}
 .logo-tile img{max-width:100%;max-height:60px;width:auto;height:auto;object-fit:contain}
+.patrocinador-confirmado{
+  margin-top:34px;display:grid;grid-template-columns:minmax(190px,280px) minmax(0,1fr);gap:26px;align-items:center;
+  padding:24px;border:1px solid rgba(0,102,255,.38);border-radius:var(--radius);
+  background:linear-gradient(135deg,rgba(0,102,255,.16),rgba(18,22,31,.92));
+  box-shadow:0 20px 54px -36px rgba(0,102,255,.9);
+}
+.patrocinador-confirmado .logo-tile{height:132px;margin:0;background:#fff}
+.patrocinador-confirmado .logo-tile img{max-height:82px}
+.patrocinador-confirmado .status{
+  display:block;margin-bottom:8px;font-family:var(--display);font-size:11px;font-weight:800;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--azul-ciano);
+}
+.patrocinador-confirmado h3{margin-bottom:10px}
+.patrocinador-confirmado p{margin:0;color:var(--aco);font-size:15.5px;line-height:1.62;max-width:62ch}
+@media (max-width:720px){.patrocinador-confirmado{grid-template-columns:1fr;padding:18px}.patrocinador-confirmado .logo-tile{height:112px}}
 
 /* ===== CURADORIA ===== */
 .palcos{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--linha);border:1px solid var(--linha);border-radius:var(--radius);overflow:hidden;margin-top:40px}
@@ -1078,8 +1093,16 @@ body.review .tbd{
 
 <section id="marcas" class="sergio">
   <div class="wrap">
-    <h2>Marcas que já estiveram no EAM</h2>
-    <p class="lead" style="margin-top:20px">Empresas que já apostaram no encontro e voltaram a conversar com o mesmo público. Sua marca entra em um ambiente que o setor já reconhece.</p>
+    <h2>Marcas que já estiveram no EAM e quem já confirmou presença</h2>
+    <p class="lead" style="margin-top:20px">Empresas que já apostaram no encontro e voltaram a conversar com o mesmo público. Agora, a 5ª edição também já começa a confirmar patrocinadores do aftermarket.</p>
+    <div class="patrocinador-confirmado">
+      <div class="logo-tile"><img src="assets/img/patrocinadores/sampel.png" alt="Sampel Peças Automotivas, patrocinadora prata confirmada do 5º EAM" loading="lazy" decoding="async"></div>
+      <div>
+        <span class="status">Patrocinadora Prata Confirmada</span>
+        <h3>Sampel Peças Automotivas já está no 5º EAM</h3>
+        <p>A primeira cota prata vendida reforça que o encontro já está atraindo marcas que querem se aproximar dos donos de oficina antes, durante e depois do evento.</p>
+      </div>
+    </div>
     <div class="logos">
       <div class="logo-tile"><img src="assets/img/patrocinadores/mte-thomson.webp" alt="MTE-Thomson" loading="lazy" decoding="async"></div>
       <div class="logo-tile"><img src="assets/img/patrocinadores/escola-do-mecanico.webp" alt="Escola do Mecânico" loading="lazy" decoding="async"></div>
@@ -1108,7 +1131,7 @@ body.review .tbd{
 <section id="curadoria">
   <div class="wrap">
     <h2>O calibre da programação que segura o público na sala</h2>
-    <p class="lead" style="margin-top:20px">Doze atrações distribuídas em quatro frentes: gestão e direção, liderança e equipe, mercado e tecnologia, posicionamento e conexão. Quanto mais forte a programação, mais tempo o participante fica exposto à sua marca.</p>
+    <p class="lead" style="margin-top:20px">Dezesseis atrações distribuídas em quatro frentes: gestão e direção, liderança e equipe, mercado e tecnologia, posicionamento e conexão. Quanto mais forte a programação, mais tempo o participante fica exposto à sua marca.</p>
 
     <div class="atracoes">
       <article class="atracao destaque">
@@ -1124,6 +1147,21 @@ body.review .tbd{
         <div class="in">
           <b>Oficina Brasil</b>
           <span class="tema">Os números que todo dono de oficina precisa conhecer</span>
+        </div>
+      </article>
+      <article class="atracao">
+        <figure><img src="assets/img/palestrantes/rogerio-silva.jpg" alt="Rogério Silva, atração do 5º EAM" loading="lazy" decoding="async"></figure>
+        <div class="in">
+          <b>Rogério Silva</b>
+          <span class="tema">Escala, margem e liderança: visão de P&amp;L, expansão B2B e redes nacionais aplicada ao crescimento de oficinas</span>
+        </div>
+      </article>
+      <article class="atracao">
+        <figure><img src="assets/img/palestrantes/palestrante-surpresa.jpg" alt="Palestrante surpresa, atração do 5º EAM" loading="lazy" decoding="async"></figure>
+        <div class="in">
+          <span class="papel">Surpresa</span>
+          <b>Palestrante Surpresa</b>
+          <span class="tema">A inteligência artificial já chegou. Sua oficina está preparada?</span>
         </div>
       </article>
       <article class="atracao">
@@ -1152,6 +1190,22 @@ body.review .tbd{
         <div class="in">
           <b>Lucas Falasqui</b>
           <span class="tema">Riscos, proteção e decisões legais na oficina</span>
+        </div>
+      </article>
+      <article class="atracao">
+        <figure><img src="assets/img/palestrantes/palestrante-surpresa.jpg" alt="Palestrante surpresa, atração do 5º EAM" loading="lazy" decoding="async"></figure>
+        <div class="in">
+          <span class="papel">Surpresa</span>
+          <b>Palestrante Surpresa</b>
+          <span class="tema">Diagnóstico, técnica e novas oportunidades na reparação</span>
+        </div>
+      </article>
+      <article class="atracao">
+        <figure><img src="assets/img/palestrantes/palestrante-surpresa.jpg" alt="Palestrante surpresa, atração do 5º EAM" loading="lazy" decoding="async"></figure>
+        <div class="in">
+          <span class="papel">Surpresa</span>
+          <b>Palestrante Surpresa</b>
+          <span class="tema">Híbridos e a nova realidade técnica da oficina</span>
         </div>
       </article>
       <article class="atracao">
@@ -1277,7 +1331,7 @@ body.review .tbd{
 <section id="cotas" class="grid-bg">
   <div class="wrap">
     <h2>Três níveis. Uma única marca por categoria na Master.</h2>
-    <p class="lead" style="margin-top:20px">São <strong>9 cotas no total</strong>: 4 Bronze, 4 Prata e 1 Master. Fechado o número, a edição encerra a captação.</p>
+    <p class="lead" style="margin-top:20px">São <strong>9 cotas no total</strong>. Com a Sampel já confirmada na Prata, restam 8 posições comerciais: 4 Bronze, 3 Prata e 1 Master. Fechado o número, a edição encerra a captação.</p>
     <div class="alcance">
       <p class="alcance-titulo">O que a cota alcança de verdade</p>
       <p class="alcance-linha">As 100 cadeiras são só a camada presencial. A cota coloca a sua marca dentro de <strong>toda a régua do evento</strong>, do aquecimento nas redes do Sergio ao rastro que fica depois do encerramento.</p>
@@ -1314,7 +1368,7 @@ body.review .tbd{
           <tr><th scope="row">Credenciais para a equipe da marca</th><td class="sim"><span class="tbd">2 credenciais</span></td><td class="sim"><span class="tbd">4 credenciais</span></td><td class="master sim"><span class="tbd">6 credenciais</span> + networking</td></tr>
           <tr><th scope="row">Depoimento em vídeo no evento</th><td class="nao"></td><td class="nao"></td><td class="master sim"></td></tr>
           <tr><th scope="row">Banco de fotos com a marca em cena</th><td class="sim"></td><td class="sim"></td><td class="master sim"></td></tr>
-          <tr><th scope="row">Vagas disponíveis</th><td>4 vagas</td><td>4 vagas</td><td class="master">1 vaga</td></tr>
+          <tr><th scope="row">Vagas disponíveis</th><td>4 vagas</td><td>3 vagas</td><td class="master">1 vaga</td></tr>
         </tbody>
       </table>
     </div>

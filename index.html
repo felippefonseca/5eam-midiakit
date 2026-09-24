@@ -258,8 +258,15 @@ section[id]{scroll-margin-top:88px}
   background:linear-gradient(135deg,rgba(0,102,255,.16),rgba(18,22,31,.92));
   box-shadow:0 20px 54px -36px rgba(0,102,255,.9);
 }
+.confirmados-grade{display:grid;gap:18px;margin-top:34px}
+.confirmados-grade .patrocinador-confirmado{margin-top:0}
+.patrocinador-confirmado.master{border-color:rgba(211,16,28,.55);background:linear-gradient(135deg,rgba(211,16,28,.18),rgba(18,22,31,.94))}
+.patrocinador-confirmado.bronze{border-color:rgba(195,126,65,.55);background:linear-gradient(135deg,rgba(195,126,65,.18),rgba(18,22,31,.94))}
+.patrocinador-confirmado.institucional{border-color:rgba(0,102,255,.34)}
 .patrocinador-confirmado .logo-tile{height:132px;margin:0;background:#fff}
 .patrocinador-confirmado .logo-tile img{max-height:82px}
+.patrocinador-confirmado.master .logo-tile img{max-height:94px}
+.patrocinador-confirmado.institucional .logo-tile img{max-height:78px}
 .patrocinador-confirmado .status{
   display:block;margin-bottom:8px;font-family:var(--display);font-size:11px;font-weight:800;letter-spacing:.22em;
   text-transform:uppercase;color:var(--azul-ciano);
@@ -793,7 +800,7 @@ body.review .tbd{
         <h1>Sua marca onde 100 donos de oficina decidem o próximo nível</h1>
         <p class="lead">O 5º EAM reúne, em <strong>três dias</strong> fechados no Hotel Serra Jundiaí, o público que o setor automotivo passa o ano inteiro tentando alcançar: o dono da oficina, com a decisão de compra na própria mão.</p>
         <a class="btn btn-primary" href="https://wa.me/5511913496405?text=Ol%C3%A1%2C%20quero%20patrocinar%20o%205%C2%BA%20EAM" target="_blank" rel="noopener">Quero patrocinar o 5º EAM</a>
-        <p class="hero-note">Cota Master com exclusividade por categoria: uma única marca por segmento.</p>
+        <p class="hero-note">Master já confirmada pela Sabó. Novas marcas ainda podem entrar em cotas Bronze e Prata.</p>
       </div>
       <figure class="shot" style="aspect-ratio:16/11;margin:0">
         <img src="assets/img/hero/patrocinio-hero.jpg" alt="Palco do EAM visto de trás, com a plateia cheia de donos de oficina e os painéis e estandes das marcas patrocinadoras nas laterais da sala" loading="lazy" decoding="async">
@@ -1093,22 +1100,42 @@ body.review .tbd{
 
 <section id="marcas" class="sergio">
   <div class="wrap">
-    <h2>Marcas que já estiveram no EAM e quem já confirmou presença</h2>
-    <p class="lead" style="margin-top:20px">Empresas que já apostaram no encontro e voltaram a conversar com o mesmo público. Agora, a 5ª edição também já começa a confirmar patrocinadores do aftermarket.</p>
-    <div class="patrocinador-confirmado">
-      <div class="logo-tile"><img src="assets/img/patrocinadores/sampel.png" alt="Sampel Peças Automotivas, patrocinadora prata confirmada do 5º EAM" loading="lazy" decoding="async"></div>
-      <div>
-        <span class="status">Patrocinadora Prata Confirmada</span>
-        <h3>Sampel Peças Automotivas já está no 5º EAM</h3>
-        <p>A primeira cota prata vendida reforça que o encontro já está atraindo marcas que querem se aproximar dos donos de oficina antes, durante e depois do evento.</p>
+    <h2>Marcas confirmadas no 5º EAM</h2>
+    <p class="lead" style="margin-top:20px">A 5ª edição já tem uma patrocinadora master, uma patrocinadora bronze e apoio institucional do setor. Para novas marcas, isso mostra que o encontro saiu da promessa e já está construindo presença real no aftermarket.</p>
+    <div class="confirmados-grade">
+      <div class="patrocinador-confirmado master">
+        <div class="logo-tile"><img src="assets/img/patrocinadores/sabo-master.svg" alt="Sabó, patrocinadora master confirmada do 5º EAM" loading="lazy" decoding="async"></div>
+        <div>
+          <span class="status">Patrocinadora Master Confirmada</span>
+          <h3>Sabó assume a cota Master do 5º EAM</h3>
+          <p>A presença da Sabó dá peso institucional e comercial ao evento, colocando uma marca forte do aftermarket no ponto de maior visibilidade da edição.</p>
+        </div>
+      </div>
+      <div class="patrocinador-confirmado bronze">
+        <div class="logo-tile"><img src="assets/img/patrocinadores/sampel.png" alt="Sampel Peças Automotivas, patrocinadora bronze confirmada do 5º EAM" loading="lazy" decoding="async"></div>
+        <div>
+          <span class="status">Patrocinadora Bronze Confirmada</span>
+          <h3>Sampel Peças Automotivas também está no 5º EAM</h3>
+          <p>A Sampel participa como patrocinadora bronze, reforçando a conexão entre indústria, balcão e donos de oficina antes, durante e depois do encontro.</p>
+        </div>
+      </div>
+      <div class="patrocinador-confirmado institucional">
+        <div class="logo-tile"><img src="assets/img/patrocinadores/sindirepa.svg" alt="Sindirepa-SP, apoio institucional do 5º EAM" loading="lazy" decoding="async"></div>
+        <div>
+          <span class="status">Apoio Institucional</span>
+          <h3>Sindirepa-SP apoia institucionalmente a edição</h3>
+          <p>O apoio do Sindirepa-SP reforça a legitimidade do 5º EAM como ambiente de relacionamento para a indústria de reparação de veículos e acessórios no estado de São Paulo.</p>
+        </div>
       </div>
     </div>
     <div class="logos">
+      <div class="logo-tile"><img src="assets/img/patrocinadores/sabo-master.svg" alt="Sabó" loading="lazy" decoding="async"></div>
+      <div class="logo-tile"><img src="assets/img/patrocinadores/sampel.png" alt="Sampel Peças Automotivas" loading="lazy" decoding="async"></div>
+      <div class="logo-tile"><img src="assets/img/patrocinadores/sindirepa.svg" alt="Sindirepa-SP" loading="lazy" decoding="async"></div>
       <div class="logo-tile"><img src="assets/img/patrocinadores/mte-thomson.webp" alt="MTE-Thomson" loading="lazy" decoding="async"></div>
       <div class="logo-tile"><img src="assets/img/patrocinadores/escola-do-mecanico.webp" alt="Escola do Mecânico" loading="lazy" decoding="async"></div>
       <div class="logo-tile"><img src="assets/img/patrocinadores/gates.png" alt="Gates" loading="lazy" decoding="async"></div>
       <div class="logo-tile"><img src="assets/img/patrocinadores/ultracar.webp" alt="Ultracar" loading="lazy" decoding="async"></div>
-      <div class="logo-tile"><img src="assets/img/patrocinadores/sabo.png" alt="Sabó" loading="lazy" decoding="async"></div>
     </div>
 
     <div class="provas trio">
@@ -1330,7 +1357,7 @@ body.review .tbd{
 <section id="cotas" class="grid-bg">
   <div class="wrap">
     <h2>Três níveis. Uma única marca por categoria na Master.</h2>
-    <p class="lead" style="margin-top:20px">São <strong>9 cotas no total</strong>. Com a Sampel já confirmada na Prata, restam 8 posições comerciais: 4 Bronze, 3 Prata e 1 Master. Fechado o número, a edição encerra a captação.</p>
+    <p class="lead" style="margin-top:20px">A cota Master já está preenchida pela Sabó e a Sampel já está confirmada como Bronze. A captação segue aberta para novas posições Bronze e Prata, enquanto o Sindirepa-SP entra como apoio institucional da edição.</p>
     <div class="alcance">
       <p class="alcance-titulo">O que a cota alcança de verdade</p>
       <p class="alcance-linha">As 100 cadeiras são só a camada presencial. A cota coloca a sua marca dentro de <strong>toda a régua do evento</strong>, do aquecimento nas redes do Sergio ao rastro que fica depois do encerramento.</p>
@@ -1350,7 +1377,7 @@ body.review .tbd{
         <thead>
           <tr>
             <th scope="col">Contrapartida</th>
-            <th scope="col"><span class="tier">Bronze</span><span class="tier-note">Apoio institucional</span><span class="tier-price">R$ 2.000</span></th>
+            <th scope="col"><span class="tier">Bronze</span><span class="tier-note">Presença de marca</span><span class="tier-price">R$ 2.000</span></th>
             <th scope="col"><span class="tier">Prata</span><span class="tier-note">Presença na área de exposição</span><span class="tier-price">R$ 4.000</span></th>
             <th scope="col" class="master"><span class="tier">Master</span><span class="tier-note">Exclusiva por categoria</span><span class="tier-price">R$ 6.000</span></th>
           </tr>
@@ -1367,7 +1394,7 @@ body.review .tbd{
           <tr><th scope="row">Credenciais para a equipe da marca</th><td class="sim"><span class="tbd">2 credenciais</span></td><td class="sim"><span class="tbd">4 credenciais</span></td><td class="master sim"><span class="tbd">6 credenciais</span> + networking</td></tr>
           <tr><th scope="row">Depoimento em vídeo no evento</th><td class="nao"></td><td class="nao"></td><td class="master sim"></td></tr>
           <tr><th scope="row">Banco de fotos com a marca em cena</th><td class="sim"></td><td class="sim"></td><td class="master sim"></td></tr>
-          <tr><th scope="row">Vagas disponíveis</th><td>4 vagas</td><td>3 vagas</td><td class="master">1 vaga</td></tr>
+          <tr><th scope="row">Vagas disponíveis</th><td>3 vagas</td><td>3 vagas</td><td class="master">Cota preenchida</td></tr>
         </tbody>
       </table>
     </div>
@@ -1424,9 +1451,9 @@ body.review .tbd{
 <section class="fechamento" id="contato">
   <div class="wrap fech-grid">
     <div>
-      <h2>A categoria da sua marca ainda está aberta</h2>
+      <h2>Ainda há espaço para marcas que querem chegar antes da concorrência</h2>
       <p class="lead" style="margin-top:20px">Este material chega até você pelas mãos do nosso time comercial, sem formulário a preencher. Responda a mensagem que acompanha este link ou fale direto conosco, e seguimos com a proposta da cota que faz sentido para a sua operação.</p>
-      <p class="txt" style="margin-top:18px">Na cota Master trabalhamos com exclusividade por segmento. Assim que uma marca fecha, a categoria sai da mesa para as demais.</p>
+      <p class="txt" style="margin-top:18px">A cota Master já foi preenchida pela Sabó. A conversa agora é sobre as posições Bronze e Prata disponíveis para marcas que querem estar próximas dos donos de oficina durante toda a régua do evento.</p>
       <a class="btn btn-primary" style="margin-top:28px" href="https://wa.me/5511913496405?text=Ol%C3%A1%2C%20quero%20patrocinar%20o%205%C2%BA%20EAM" target="_blank" rel="noopener">Quero patrocinar o 5º EAM</a>
       <button type="button" class="btn btn-ghost btn-pdf" style="margin-top:28px;margin-left:12px" id="btnPdf">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5v11"/><path d="m7.8 10.6 4.2 4.2 4.2-4.2"/><path d="M4.5 17.5v1.2a1.8 1.8 0 0 0 1.8 1.8h11.4a1.8 1.8 0 0 0 1.8-1.8v-1.2"/></svg>
